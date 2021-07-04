@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    image: nginx
+    volumes:
+        - ./www:/usr/share/nginx/html
+    ports:
+        - "8080:80"
+    environment:
+        - NGINX_PORT=80
+  api:
+   image: api
+   ports:
+     - "9000:9000"

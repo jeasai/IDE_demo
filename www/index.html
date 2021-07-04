@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Docker Nginx</title>
+</head>
+<body>
+  <h2>Le texte de l'API:</h2>
+  <script>
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "http://0.0.0.0:9000/", false);
+    xmlHttp.send( null );
+    document.write(xmlHttp.responseText)
+  </script>
+</body>
+</html>
